@@ -1,0 +1,148 @@
+/* we use # for is 
+and we use . for class */
+
+/* in px or em 
+the em is like 0.5em means 50% */
+
+/* if i wanna get a font from a google api i need to copy the link from the google website or i can download it also from the website then i must connect it 
+if i wanna use it from api then i need to link it in the html file 
+if i wanna use it from the download then i need to put it in my file then use it in css like this 
+@font-face{
+    src: url(fonts/fontName);
+    font-family: fontName;
+} 
+*/
+body{
+   background-color: rgb(213, 204, 235);
+   margin: 0px;
+}
+main{
+    margin: 20px;
+}
+p{
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+#p223{
+    color: black;
+}
+.lol{
+    background-color: aqua;
+}
+h1{
+    font-family: Verdana,Arial, Helvetica, sans-serif;
+
+    text-shadow: 3px 2px 2px green;
+
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    box-shadow: 3px 3px 5px;
+    
+}
+#box2{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    box-shadow: 3px 3px 5px;
+    margin: 0;
+}
+/* colors */
+/*  background-color: blueviolet; */
+
+/* when mark something with mouse */
+p::selection{
+    background-color: black;
+    color: red;
+}
+
+
+/* moving between pages */
+.pagination{
+    text-align: center;
+
+}
+.pagination a{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.pagination a:hover:not(.active){
+    background-color: gray;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+/* dropdown */
+.dropdown{
+    display:inline-block;
+}
+
+.dropdown button{
+    background-color: blue;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+
+}
+
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 100px;
+    box-shadow:2px 2px 5px gray ;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgb(1, 1, 214);
+    
+}
+.dropdown a:hover{
+    background-color: rgb(1, 1, 214);
+}
+
+/* navbar */
+.navbar ul{
+    list-style-type: none;
+    background-color: orange;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(220, 143, 0);
+
+}
+.navbar li{
+    float: left;
+    /* display: inline-block; */
+}

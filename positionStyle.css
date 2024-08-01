@@ -1,0 +1,33 @@
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /* position: relative; */
+
+    
+    /* position: fixed; */
+
+    /* on top of something */
+    /* position: absolute; */
+
+    /* to be able to move it while moving the screen */
+    /* position: sticky; */
+    top: 50%;
+    left: 50%;
+}
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+body{
+    background-image: url(./images/channels4_profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}

@@ -1,0 +1,33 @@
+/* float */
+/* float let the element that take a full line to accept something next to it  */
+#img1{
+    float: left;
+    margin: 5px;
+}
+body{
+    border: 2px solid black;
+    padding: 5px;
+    display: flow-root;
+}
+
+/* overflow
+    when there is no space for element to show what action show happened 
+*/
+div{
+    border: 2px solid black;
+    height: 50px;
+    overflow: auto;
+    background-color: black;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+
+    /* overflow: auto; */
+
+    /* it allow you to decide how much you wanna show out of the accepted area */
+    /* overflow: clip;
+    overflow-clip-margin: 10px; */
+}
+#hideit{
+    color: green;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

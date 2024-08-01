@@ -1,0 +1,36 @@
+
+div{
+    background-color: red;
+}
+span{
+    background-color: blue;
+}
+
+/* (*) for all elements */
+/* we use box sizing for the width and height and padding and border size calculation   */
+*{
+    box-sizing: border-box;
+}
+.box{
+    border: 2px solid black;
+    padding: 20px;
+    /* box-sizing: border-box; */
+    height: auto;  
+    width: 50%;
+    float: left;
+text-align: center;
+
+    /* max-width: 60%;
+    min-width: 40%; */
+
+
+}
+.container{
+    background-color: aqua;
+
+    /*
+     vh is view height
+     
+     */
+    height: 100vh;
+}

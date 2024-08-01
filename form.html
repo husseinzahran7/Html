@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <p>hello world</p>
+
+    <!-- 
+    form
+    action: where we need to send the form
+    method: for the get/post else 
+
+
+    in form we add label 
+    for: for when click on the label it goes for the input
+    input: where user put there data 
+    required: for the field should be filled (validations)
+    reset: for reset
+    submit: for submit
+    Note:{ (id) in input should be the same for (for) in label }
+
+
+    in phone pattern will pick the input
+    creating the dash system like input numbers [0-9] 3 digest {3} dash for the next - and the same
+-->
+
+    <!-- enctype : for lets say it cut the data to small pieces and send it -->
+    <form action="" method="post" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="name"
+        required
+        minlength="6"
+        maxlength="24"
+      />
+
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="email"
+      />
+
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        placeholder="password"
+      />
+
+      <br />
+      <label for="Phone">Phone</label>
+      <input
+        type="tel"
+        name="Phone"
+        id="Phone"
+        required
+        placeholder="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        maxlength="10"
+        minlength="10"
+      />
+
+      <br />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        required
+        placeholder="18"
+        min="18"
+        max="100"
+      />
+
+      <br />
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" required />
+
+      <br />
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color" required />
+
+      <br />
+      <!-- to set the validation of the in put type where we have to pick if its  what is allow to send then we use accept  -->
+      <label for="file">File</label>
+      <input
+        type="file"
+        name="file"
+        id="file"
+        required
+        accept="image/jpg, image/jpeg, image/png"
+      />
+
+      <br />
+      <label for="hidden">Hidden</label>
+      <input type="hidden" name="hidden" id="hidden" required />
+
+      <br />
+      <!-- radio btn
+        the radio btn to be in the same groupe they has to share the same title in (name)
+        -->
+      <label for="title">title</label>
+
+      <label for="mr">Mr</label>
+      <input type="radio" id="mr" value="mr" required name="title" />
+
+      <label for="ms">Ms</label>
+      <input type="radio" id="ms" value="ms" required name="title" />
+
+      <label for="phd">PhD</label>
+      <input type="radio" id="phd" value="phd" required name="title" />
+
+      <br />
+
+      <!-- drop down menu -->
+      <label for="payment">Payment</label>
+
+      <select name="" id="payment">
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="giftcard">giftcard</option>
+      </select>
+
+      <br /> 
+      <!-- checkbox -->
+      <label for="subscribe">subscribe</label>
+      <input type="checkbox" id="subscribe" /><br />
+
+      <label for="comment">comment</label>
+      <textarea name="comment" id="comment" cols="25"></textarea>
+      <br />
+
+      <input type="reset" />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
