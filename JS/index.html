@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  
+    <title>My website</title>
+</head>
+<body>
+
+   <h1 id="h1"></h1>
+    <p id="p1"></p>
+
+    <hr>
+    <!-- user input -->
+    <h4 id="h4">Welcome</h1>
+        <label for="input1">Username: </label>
+        <input type="text" id="input1">
+        <button id="submit">Submit</button>
+
+
+        <hr>
+        <div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Subscribe</label><br><br>
+
+            <!-- to group we use name attribute -->
+            <input type="radio" id="visaBtn" name="card">
+            <label for="visaBtn">Visa</label><br>
+            <input type="radio" id="masterCardBtn" name="card">
+            <label for="masterCardBtn">MasterCard</label><br>
+            <input type="radio" id="payPalBtn" name="card">
+            <label for="payPalBtn">PayPal</label><br><br>
+
+            <button type="submit" id="submit2">Submit</button>
+
+            <p id="subResult"> </p>
+            <p id="paymentResult"> </p>
+        </div>
+        <!-- // -->
+         <hr>
+
+         <!-- temperature conversion -->
+         <form >
+            <h1>Temperature conversion</h1>
+            <input type="number" id="tempInput" value="0"><br>
+            
+            <input type="radio" id="toCelsius" name="temp" >
+            <label id="toCelsius" for="toCelsius" >Celsius ➡️ Fahrenheit </label><br>
+           
+            
+            <input type="radio" id="toFahrenheit" name="temp">
+            <label id="toFahrenheit" for="toFahrenheit">Fahrenheit ➡️ Celsius </label><br>
+
+            <button type="submit" id="submit3" onclick="convertTemp()">Convert</button>
+
+            <p id="result"></p>
+            
+
+            
+
+         </form>
+
+
+    <script src="./index.js">
+        
+    </script>
+    
+</body>
+</html>
+
