@@ -695,6 +695,187 @@ function convertTemp() {
 */
 // =========================================
 
-// ==================== temperature conversion =====================
+// ==================== array =====================
+
+/*
+let fruits = ["Apple", "Banana", "Orange"];
+
+console.log(fruits);
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+fruits[0]="coconut";
+console.log(fruits);
+
+fruits.push("coconut");
+console.log(fruits);
+
+fruits.pop();
+console.log(fruits);
+
+fruits.unshift("mango");
+console.log(fruits);
+
+let numOffFruits = fruits.length;
+console.log(numOffFruits);
+
+let index = fruits.indexOf("Apple");
+console.log(index);
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+    
+}
+
+for (let fruit of fruits) {
+    console.log(fruit);
+    
+}
+
+fruits.sort();
+console.log(fruits);
+
+fruits.reverse();
+console.log(fruits);
+
+fruits.shift();
+console.log(fruits);
+*/
+
+// =========================================
+
+// ==================== spread operator =====================
+// unpack the elements
+
+/*
+let numbers = [1,2,3,4,5];
+console.log(numbers);
+
+let maximum = Math.max(...numbers);
+console.log(maximum);
+
+let username = "Luffy";
+let letters = [...username].join("*");
+console.log(letters);
+
+let fruit = ["apple","orange", "banana"];
+let vegetables = ["carrots", "potatoes", "celery",]
+
+let foods = [...fruit,...vegetables, "mango","milk"];
+console.log(foods);
+*/
+
+// =========================================
+
+// ==================== rest parameters =====================
+/*
+function openFridge(...foods) {
+    console.log(foods);
+    
+}
+
+function getFood(...foods) {
+    return foods;
+}
+
+const food1 ="pizza";
+const food2 ="burger";
+const food3 ="hotdog";
+const food4 ="sushi";
+
+openFridge(food1,food2,food3,food4);
+
+const food = getFood(food1,food2,food3,food4);
+console.log(food);
+*/
+/*
+function sum(...numbers) {
+
+    let result = 0;
+    for (let number of numbers) {
+       result +=number;
+        
+    }
+   return result;
+}
+const total = sum(1,2,3,4,5,6,7,8,9,10);
+console.log(total);
+
+
+function getAverage(...numbers) {
+
+    let result = 0;
+    for (let number of numbers) {
+       result +=number;
+        
+    }
+   return result / numbers.length;
+}
+
+const average = getAverage(1,2,3,4,5,6,7,8,9,10);
+console.log(average);
+
+*/
+
+// =========================================
+
+// ==================== roll dice game =====================
+
+// i skip it
+
+// =========================================
+
+// ==================== random password generator =====================
+
+/*
+function generatePassword(length,includesLowercase,includesUppercase,includesNumbers,includesSymbols) {    
+    
+    const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+    const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const numberChars = "0123456789";
+    const symbolChars = "!@#$%^&*()_+";
+
+    let allowedChars = "";
+    let password = "";
+
+
+    allowedChars += includesLowercase ? lowercaseChars : "";
+    allowedChars += includesUppercase? uppercaseChars : "";
+    allowedChars += includesNumbers? numberChars : "";
+    allowedChars += includesSymbols? symbolChars : "";
+
+    if (length <= 0) {
+        return`(password must be at least 1 character)`;
+    } 
+    if (allowedChars.length === 0) {
+        return`(password must contain at least one character)`;
+    }
+
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+        password += allowedChars.charAt(randomIndex);
+    }
+
+
+
+
+    return password;
+}
+
+const passwordLength = 10;
+const includesLowercase = true;
+const includesUppercase = true;
+const includesNumbers = true;
+const includesSymbols = true;
+
+const password = generatePassword(passwordLength,includesLowercase,includesUppercase,includesNumbers,includesSymbols);
+console.log(`Generated password: ${password}`);
+*/
+
+// =========================================
+
+// ==================== callback =====================
+
 
 
